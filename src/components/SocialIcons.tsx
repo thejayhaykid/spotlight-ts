@@ -34,3 +34,503 @@ export function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   )
 }
+
+export function LetterboxdIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <>
+      <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+        <title>letterboxd-decal-dots-neg-mono</title>
+        <defs>
+          <rect
+            id="path-1"
+            x="0"
+            y="0"
+            width="129.847328"
+            height="141.443299"
+          />
+          <rect
+            id="path-3"
+            x="0"
+            y="0"
+            width="129.847328"
+            height="141.443299"
+          />
+        </defs>
+        <g
+          id="letterboxd-decal-dots-neg-mono"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <circle id="Circle" fill="#FFFFFF" cx="250" cy="250" r="250" />
+          <g id="Dots" transform="translate(61.000000, 180.000000)">
+            <ellipse
+              id="Green"
+              fill="#202830"
+              cx="189"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+            <g id="Blue" transform="translate(248.152672, 0.000000)">
+              <mask id="mask-2" fill="white">
+                <use xlinkHref="#path-1" />
+              </mask>
+              <g id="Mask" />
+              <ellipse
+                fill="#202830"
+                mask="url(#mask-2)"
+                cx="59.7686766"
+                cy="70"
+                rx="70.0786517"
+                ry="70"
+              />
+            </g>
+            <g id="Orange">
+              <mask id="mask-4" fill="white">
+                <use xlinkHref="#path-3" />
+              </mask>
+              <g id="Mask" />
+              <ellipse
+                fill="#202830"
+                mask="url(#mask-4)"
+                cx="70.0786517"
+                cy="70"
+                rx="70.0786517"
+                ry="70"
+              />
+            </g>
+            <path
+              d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+              id="Overlap"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+              id="Overlap"
+              fill="#FFFFFF"
+            />
+          </g>
+        </g>
+      </svg>
+      <title>letterboxd-decal-dots-neg-mono</title>
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <rect id="path-1" x="0" y="0" width="129.847328" height="141.443299" />
+        <rect id="path-3" x="0" y="0" width="129.847328" height="141.443299" />
+      </defs>
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="letterboxd-decal-dots-neg-mono"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <circle id="Circle" fill="#FFFFFF" cx="250" cy="250" r="250" />
+        <g id="Dots" transform="translate(61.000000, 180.000000)">
+          <ellipse
+            id="Green"
+            fill="#202830"
+            cx="189"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+          <g id="Blue" transform="translate(248.152672, 0.000000)">
+            <mask id="mask-2" fill="white">
+              <use
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                xlinkHref="#path-1"
+              />
+            </mask>
+            <g id="Mask" />
+            <ellipse
+              fill="#202830"
+              mask="url(#mask-2)"
+              cx="59.7686766"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+          </g>
+          <g id="Orange">
+            <mask id="mask-4" fill="white">
+              <use
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                xlinkHref="#path-3"
+              />
+            </mask>
+            <g id="Mask" />
+            <ellipse
+              fill="#202830"
+              mask="url(#mask-4)"
+              cx="70.0786517"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+          </g>
+          <path
+            d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+            id="Overlap"
+            fill="#FFFFFF"
+          />
+          <path
+            d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+            id="Overlap"
+            fill="#FFFFFF"
+          />
+        </g>
+      </g>
+      <circle
+        xmlns="http://www.w3.org/2000/svg"
+        id="Circle"
+        fill="#FFFFFF"
+        cx="250"
+        cy="250"
+        r="250"
+      />
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="Dots"
+        transform="translate(61.000000, 180.000000)"
+      >
+        <ellipse
+          id="Green"
+          fill="#202830"
+          cx="189"
+          cy="70"
+          rx="70.0786517"
+          ry="70"
+        />
+        <g id="Blue" transform="translate(248.152672, 0.000000)">
+          <mask id="mask-2" fill="white">
+            <use
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xlinkHref="#path-1"
+            />
+          </mask>
+          <g id="Mask" />
+          <ellipse
+            fill="#202830"
+            mask="url(#mask-2)"
+            cx="59.7686766"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+        </g>
+        <g id="Orange">
+          <mask id="mask-4" fill="white">
+            <use
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xlinkHref="#path-3"
+            />
+          </mask>
+          <g id="Mask" />
+          <ellipse
+            fill="#202830"
+            mask="url(#mask-4)"
+            cx="70.0786517"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+        </g>
+        <path
+          d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+          id="Overlap"
+          fill="#FFFFFF"
+        />
+        <path
+          d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+          id="Overlap"
+          fill="#FFFFFF"
+        />
+      </g>
+      <ellipse
+        xmlns="http://www.w3.org/2000/svg"
+        id="Green"
+        fill="#202830"
+        cx="189"
+        cy="70"
+        rx="70.0786517"
+        ry="70"
+      />
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="Blue"
+        transform="translate(248.152672, 0.000000)"
+      >
+        <mask id="mask-2" fill="white">
+          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#path-1" />
+        </mask>
+        <g id="Mask" />
+        <ellipse
+          fill="#202830"
+          mask="url(#mask-2)"
+          cx="59.7686766"
+          cy="70"
+          rx="70.0786517"
+          ry="70"
+        />
+      </g>
+      <mask xmlns="http://www.w3.org/2000/svg" id="mask-2" fill="white">
+        <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#path-1" />
+      </mask>
+      <g xmlns="http://www.w3.org/2000/svg" id="Mask" />
+      <ellipse
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#202830"
+        mask="url(#mask-2)"
+        cx="59.7686766"
+        cy="70"
+        rx="70.0786517"
+        ry="70"
+      />
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="Blue"
+        transform="translate(248.152672, 0.000000)"
+      >
+        <mask id="mask-2" fill="white">
+          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#path-1" />
+        </mask>
+        <g id="Mask" />
+        <ellipse
+          fill="#202830"
+          mask="url(#mask-2)"
+          cx="59.7686766"
+          cy="70"
+          rx="70.0786517"
+          ry="70"
+        />
+      </g>
+      <g xmlns="http://www.w3.org/2000/svg" id="Orange">
+        <mask id="mask-4" fill="white">
+          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#path-3" />
+        </mask>
+        <g id="Mask" />
+        <ellipse
+          fill="#202830"
+          mask="url(#mask-4)"
+          cx="70.0786517"
+          cy="70"
+          rx="70.0786517"
+          ry="70"
+        />
+      </g>
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+        id="Overlap"
+        fill="#FFFFFF"
+      />
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+        id="Overlap"
+        fill="#FFFFFF"
+      />
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="Dots"
+        transform="translate(61.000000, 180.000000)"
+      >
+        <ellipse
+          id="Green"
+          fill="#202830"
+          cx="189"
+          cy="70"
+          rx="70.0786517"
+          ry="70"
+        />
+        <g id="Blue" transform="translate(248.152672, 0.000000)">
+          <mask id="mask-2" fill="white">
+            <use
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xlinkHref="#path-1"
+            />
+          </mask>
+          <g id="Mask" />
+          <ellipse
+            fill="#202830"
+            mask="url(#mask-2)"
+            cx="59.7686766"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+        </g>
+        <g id="Orange">
+          <mask id="mask-4" fill="white">
+            <use
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xlinkHref="#path-3"
+            />
+          </mask>
+          <g id="Mask" />
+          <ellipse
+            fill="#202830"
+            mask="url(#mask-4)"
+            cx="70.0786517"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+        </g>
+        <path
+          d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+          id="Overlap"
+          fill="#FFFFFF"
+        />
+        <path
+          d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+          id="Overlap"
+          fill="#FFFFFF"
+        />
+      </g>
+      <g
+        xmlns="http://www.w3.org/2000/svg"
+        id="letterboxd-decal-dots-neg-mono"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <circle id="Circle" fill="#FFFFFF" cx="250" cy="250" r="250" />
+        <g id="Dots" transform="translate(61.000000, 180.000000)">
+          <ellipse
+            id="Green"
+            fill="#202830"
+            cx="189"
+            cy="70"
+            rx="70.0786517"
+            ry="70"
+          />
+          <g id="Blue" transform="translate(248.152672, 0.000000)">
+            <mask id="mask-2" fill="white">
+              <use
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                xlinkHref="#path-1"
+              />
+            </mask>
+            <g id="Mask" />
+            <ellipse
+              fill="#202830"
+              mask="url(#mask-2)"
+              cx="59.7686766"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+          </g>
+          <g id="Orange">
+            <mask id="mask-4" fill="white">
+              <use
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                xlinkHref="#path-3"
+              />
+            </mask>
+            <g id="Mask" />
+            <ellipse
+              fill="#202830"
+              mask="url(#mask-4)"
+              cx="70.0786517"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+          </g>
+          <path
+            d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+            id="Overlap"
+            fill="#FFFFFF"
+          />
+          <path
+            d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+            id="Overlap"
+            fill="#FFFFFF"
+          />
+        </g>
+      </g>
+      <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+        <title>letterboxd-decal-dots-neg-mono</title>
+        <defs>
+          <rect
+            id="path-1"
+            x="0"
+            y="0"
+            width="129.847328"
+            height="141.443299"
+          />
+          <rect
+            id="path-3"
+            x="0"
+            y="0"
+            width="129.847328"
+            height="141.443299"
+          />
+        </defs>
+        <g
+          id="letterboxd-decal-dots-neg-mono"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <circle id="Circle" fill="#FFFFFF" cx="250" cy="250" r="250" />
+          <g id="Dots" transform="translate(61.000000, 180.000000)">
+            <ellipse
+              id="Green"
+              fill="#202830"
+              cx="189"
+              cy="70"
+              rx="70.0786517"
+              ry="70"
+            />
+            <g id="Blue" transform="translate(248.152672, 0.000000)">
+              <mask id="mask-2" fill="white">
+                <use xlinkHref="#path-1" />
+              </mask>
+              <g id="Mask" />
+              <ellipse
+                fill="#202830"
+                mask="url(#mask-2)"
+                cx="59.7686766"
+                cy="70"
+                rx="70.0786517"
+                ry="70"
+              />
+            </g>
+            <g id="Orange">
+              <mask id="mask-4" fill="white">
+                <use xlinkHref="#path-3" />
+              </mask>
+              <g id="Mask" />
+              <ellipse
+                fill="#202830"
+                mask="url(#mask-4)"
+                cx="70.0786517"
+                cy="70"
+                rx="70.0786517"
+                ry="70"
+              />
+            </g>
+            <path
+              d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z"
+              id="Overlap"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z"
+              id="Overlap"
+              fill="#FFFFFF"
+            />
+          </g>
+        </g>
+      </svg>
+    </>
+  )
+}

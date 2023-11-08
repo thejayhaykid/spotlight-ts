@@ -1,25 +1,32 @@
 import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
+  LetterboxdIcon,
+  // InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
+  // TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+
+import logoTC from '@/images/logos/t-cetra.png'
+import logoUpstart from '@/images/logos/upstart.png'
+import logoSportsBiz from '@/images/logos/sportsbiz.png'
+import logoDaugherty from '@/images/logos/daugherty.jpg'
+import logoNationwide from '@/images/logos/nationwide.png'
+import logoHMB from '@/images/logos/HMB.png'
+import logoSingleSpa from '@/images/logos/single-spa.svg'
+
+import image1 from '@/images/photos/home/cj.png'
+import image2 from '@/images/photos/home/golf-sm.png'
+import image3 from '@/images/photos/home/lake.png'
+import image4 from '@/images/photos/home/wedding.png'
+import image5 from '@/images/photos/home/zoo.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -158,8 +165,13 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-100 dark:ring-0">
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-7 w-7 object-contain"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -187,35 +199,59 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'T-CETRA',
+      title: 'Lead Software Engineer',
+      logo: logoTC,
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'single-spa',
+      title: 'Open Source Maintainer',
+      logo: logoSingleSpa,
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Upstart',
+      title: 'Software Engineer',
+      logo: logoUpstart,
+      start: '2021',
+      end: '2023',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'SportsBiz',
+      title: 'Senior Engineer (Part-time)',
+      logo: logoSportsBiz,
+      start: '2022',
+      end: '2023',
+    },
+    {
+      company: 'Daugherty Business Solutions',
+      title: 'Software Engineering Consultant',
+      logo: logoDaugherty,
+      start: '2021',
+      end: '2021',
+    },
+    {
+      company: 'Nationwide Insurance',
+      title: 'Senior Developer',
+      logo: logoNationwide,
+      start: '2020',
+      end: '2021',
+    },
+    {
+      company: 'HMB, Inc.',
+      title: 'Consultant',
+      logo: logoHMB,
+      start: '2017',
+      end: '2020',
     },
   ]
 
@@ -230,9 +266,9 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      <Button href="/resume" variant="secondary" className="group mt-6 w-full">
+        See Full Resumé
+        <ArrowRightIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
   )
@@ -273,32 +309,33 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software engineer, consultant, and technical writer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            Enthusiastic software engineer with a knack for creating captivating
+            websites, dedicated to bringing your digital vision to life.
+            Embracing every challenge, I enjoy learning and exploring new
+            technologies to deliver customized online experiences that leave a
+            lasting impression.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
+            {/* <SocialLink
+              href="https://twitter.com/thejayhaykid"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
-            <SocialLink
+            /> */}
+            {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/thejayhaykid"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/jakejhayes"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -314,7 +351,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
