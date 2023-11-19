@@ -1,5 +1,14 @@
 import { ResumeLayout } from '@/components/ResumeLayout'
 import Image from 'next/image'
+import logoTC from '@/images/logos/t-cetra.png'
+import logoUpstart from '@/images/logos/upstart.png'
+import logoSportsBiz from '@/images/logos/sportsbiz.png'
+import logoDaugherty from '@/images/logos/daugherty.jpg'
+import logoNationwide from '@/images/logos/nationwide.png'
+import logoHMB from '@/images/logos/HMB.png'
+import logoSingleSpa from '@/images/logos/single-spa.svg'
+import logoApple from '@/images/logos/Apple.png'
+import logoStashtag from '@/images/logos/stashtag.app.png'
 
 export const article = {
   author: 'Jake Hayes',
@@ -13,37 +22,64 @@ export const metadata = {
   description: article.description,
 }
 
+export const imageClasses =
+  'shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-100 dark:ring-0 ml-auto h-10 w-10 object-contain self-center'
+
 export default (props) => <ResumeLayout article={article} {...props} />
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Lead Software Engineer
 
 ### T-CETRA, Dublin, OH / March 2023 - Present
+
+  </div>
+  <Image src={logoTC} className={imageClasses} alt="T-Cetra Logo" />
+</div>
 
 - Lead software engineer responsible for modernizing the front-end of all business applications at the company, introducing React
 - Responsible for setting company standards of code quality and code organization
 - Selected as a lead member of an internal “Startup within the company” to completely rebuild the companies primary application from scratch
 - Mentored team members on effective front-end practices and performed code reviews to ensure proper standards are met
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Software Engineer
 
 ### Upstart, Columbus, OH / September 2021 - January 2023
+
+</div>
+  <Image src={logoUpstart} className={imageClasses} alt="Upstart Logo" />
+</div>
 
 - Full-stack engineer on the Auto Refinance team with a React front-end and Ruby on Rails backend
 - Worked as the team’s React and TypeScript “Frontend Champion”. Completing a project to pull the Auto Refinance signup flow out of the companies monolithic codebase into it’s own separate service
 - Participated on a winning team in my first ever hackweek, converting a customer funnel from individual React apps into a single page application, increasing the site speed and stability
 - Lead a project to bring a new auto loan product to market that pays borrowers cash for the amount saved from their loan refinance
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Senior Software Engineer (Part-time)
 
 ### SportsBiz, Fully remote / September 2022 - April 2023
+
+</div>
+  <Image src={logoSportsBiz} className={imageClasses} alt="SportsBiz Logo" />
+</div>
 
 - Founding engineer for SportsBiz startup helping bring application to the market to secure funding
 - Rewrote large section of proof-of-concept application into a workable, production level React application
 - Performed numerous bug-fixes for both the React frontend and the Java Spring backend
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Software Engineering Consultant
 
 ### Daugherty Business Solutions, Columbus, OH / February 2021 - September 2021
+
+</div>
+  <Image src={logoDaugherty} className={imageClasses} alt="Daugherty Logo" />
+</div>
 
 - One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch
 - Current client is a Fortune 500 Financial Company
@@ -53,9 +89,15 @@ export default (props) => <ResumeLayout article={article} {...props} />
 - Participated on the leadership committee for the New Hire Buddy Program for the entire company
 - Organized and directed virtual social events for engagement during remote assignments
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Senior Developer
 
 ### Nationwide, Columbus, OH / 2020 - 2021
+
+</div>
+  <Image src={logoNationwide} className={imageClasses} alt="Nationwide Logo" />
+</div>
 
 - Full-stack React Web Developer using Typescript on the biggest internal app at Nationwide
 - Assisted in migrating the Web App from Sharepoint to AWS Kubernetes cluster with a CI/CD pipeline using Concourse and Harness
@@ -63,18 +105,30 @@ export default (props) => <ResumeLayout article={article} {...props} />
 - Lead design on a completed front-end React app
 - Used multiple deployment strategies including Blue/Green and Canary deployments
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## Consultant
 
 ### HMB, Inc., Westerville, OH / 2017 – 2020
+
+</div>
+  <Image src={logoHMB} className={imageClasses} alt="HMB Logo" />
+</div>
 
 - Supported and developed a Python application that receives GPS data sent in from the field, then processes the data using Arcpy, and stores it for use into an Oracle SQL Databases
 - Developed a Python script to automate the creation of the standard testing Excel documentation that the client uses
 - Maintained a legacy mainframe application, learning all necessary technologies on the job including COBOL, CICS, JCL, and overnight batch applications
 - Began process of enhancing React app with various features such as state management with Redux, adding Bootstrap to speed up UI development, and a router to unite the application to being a Single Page App (SPA)
 
+<div className="flex items-center">
+<div className="flex flex-col items-start">
 ## AppleCare at Home Senior Advisor
 
 ### Apple, Inc., Cupertino, CA / 2014 – 2017
+
+</div>
+  <Image src={logoApple} className={imageClasses} alt="Apple Logo" />
+</div>
 
 - Resolved matters related to technical difficulties and product use/misuse to ensure customer satisfaction
 - Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving
@@ -84,12 +138,18 @@ export default (props) => <ResumeLayout article={article} {...props} />
 
 # SIDE PROJECTS
 
-## [Stashtag.app](https://www.stashtag.app/)
+<div className="flex items-baseline">
+  ## [Stashtag.app](https://www.stashtag.app/)
+  <Image src={logoStashtag} className={imageClasses} alt="Stashtag Logo" />
+</div>
 
 - Side project completed using [React](https://reactjs.org/) and [Chakra UI](https://chakra-ui.com/)
 - Store the hashtags you use in social posts so that you can be consistent in using them
 
-## [Single-SPA Maintainer](https://single-spa.js.org)
+<div className="flex items-baseline">
+  ## [Single-SPA Maintainer](https://single-spa.js.org)
+  <Image src={logoSingleSpa} className={imageClasses} alt="Single-spa Logo" />
+</div>
 
 - Active in dedicated Slack server for the Single-SPA package
 - Attend monthly maintainer meetings to help align work and get the core team working together
