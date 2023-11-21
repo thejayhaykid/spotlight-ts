@@ -94,12 +94,9 @@ interface LinkGroupProps {
   links: Link[]
 }
 
-function LinkGroup({ links }: LinkGroupProps) {
+function LinkGroup({ links }: Readonly<LinkGroupProps>) {
   return (
-    <ul
-      role="list"
-      className="w-screen divide-y overflow-hidden shadow ring-1 md:w-[500px] md:rounded-xl"
-    >
+    <ul className="w-screen divide-y overflow-hidden border shadow md:w-[500px] md:rounded-xl">
       {links.map((link: Link) => (
         <li
           key={link.linkUrl}
@@ -128,8 +125,8 @@ function LinkGroup({ links }: LinkGroupProps) {
           </div>
           <div className="flex shrink-0 items-center gap-x-4">
             <div className="hidden sm:flex sm:flex-col sm:items-end">
-              <p className="text-sm leading-6 ">{link.sideText1 || ''}</p>
-              <p className="mt-1 text-xs leading-5 ">{link.sideText2 || ''}</p>
+              <p className="text-sm leading-6 ">{link.sideText1 ?? ''}</p>
+              <p className="mt-1 text-xs leading-5 ">{link.sideText2 ?? ''}</p>
             </div>
             <svg
               className="h-5 w-5 flex-none"
@@ -162,28 +159,28 @@ export default function Links() {
     >
       <div className="flex w-full flex-col items-center overflow-y-auto">
         <div>
-          <h2 className="pb-2 pl-2 text-2xl font-bold md:pl-0">
+          <h2 className="pb-2 pl-6 text-2xl font-bold md:pl-0">
             General Links
           </h2>
-          <h6 className="pb-2 pl-2 text-sm md:pl-0">
+          <h6 className="pb-2 pl-6 text-sm md:pl-0">
             <em>These are links to my profiles on other websites</em>
           </h6>
           <LinkGroup links={generalLinks} />
         </div>
         <div className="my-8">
-          <h2 className="pb-2 pl-2 text-2xl  font-bold md:pl-0">
+          <h2 className="pb-2 pl-6 text-2xl  font-bold md:pl-0">
             Things I&apos;ve made
           </h2>
-          <h6 className="pb-2  pl-2 text-sm md:pl-0">
+          <h6 className="pb-2  pl-6 text-sm md:pl-0">
             <em>Hopefully this list continues growing</em>
           </h6>
           <LinkGroup links={portfolioLinks} />
         </div>
         <div className="my-8">
-          <h2 className="pb-2 pl-2 text-2xl  font-bold md:pl-0">
+          <h2 className="pb-2 pl-6 text-2xl  font-bold md:pl-0">
             Buy some stuff
           </h2>
-          <h6 className="pb-2  pl-2 text-sm md:pl-0">
+          <h6 className="pb-2  pl-6 text-sm md:pl-0">
             <em>Or not, but here are some options</em>
           </h6>
           <LinkGroup links={sellingLinks} />
