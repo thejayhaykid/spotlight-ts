@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import DisqusComments from './DiqusComments'
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -63,6 +64,7 @@ export function ArticleLayout({
               {children}
             </Prose>
           </article>
+          <DisqusComments post={article} />
         </div>
       </div>
     </Container>
