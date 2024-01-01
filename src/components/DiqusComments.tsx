@@ -10,7 +10,10 @@ const DisqusComments = ({ post }: DisqusCommentsProps) => {
 
   const disqusConfig = {
     // Get window location
-    url: window.location.href,
+    url:
+      typeof window !== 'undefined'
+        ? window.location.href
+        : `https://www.jakehayes.net/articles${post.slug}`,
     identifier: btoa(post.title), // Single post id
     title: post.title, // Single post title
     language: 'en_US',
