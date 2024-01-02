@@ -13,7 +13,7 @@ const DisqusComments = ({ post }: DisqusCommentsProps) => {
     url:
       typeof window !== 'undefined'
         ? window.location.href
-        : `https://www.jakehayes.net/articles${post.slug}`,
+        : `https://www.jakehayes.net/articles/${post.slug}`,
     identifier: btoa(post.title), // Single post id
     title: post.title, // Single post title
     language: 'en_US',
