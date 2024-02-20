@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/me.png'
+import { standardMetadata } from '@/lib/metadata'
 
 const description =
   'I’m Jake Hayes. I live in Columbus, Ohio, where I design, build, and think about software.'
@@ -46,6 +47,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
+  ...standardMetadata,
   title: 'About',
   description: description,
 }

@@ -3,6 +3,7 @@ import { type Metadata } from 'next'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { standardMetadata } from '@/lib/metadata'
 
 function SpeakingSection({
   children,
@@ -41,6 +42,7 @@ function Appearance({
 }
 
 export const metadata: Metadata = {
+  ...standardMetadata,
   title: 'Speaking',
   description:
     'I’ve spoken at events all around the world and been interviewed for many podcasts.',

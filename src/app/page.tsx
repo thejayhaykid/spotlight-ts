@@ -29,6 +29,7 @@ import image4 from '@/images/photos/home/wedding.png'
 import image5 from '@/images/photos/home/zoo.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { standardMetadata } from '@/lib/metadata'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -299,6 +300,12 @@ function Photos() {
       </div>
     </div>
   )
+}
+
+export const metadata = {
+  ...standardMetadata,
+  title: 'Home',
+  description: 'Software engineer, consultant, and technical writer.',
 }
 
 export default async function Home() {

@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { standardMetadata } from '@/lib/metadata'
 // import logoAnimaginary from '@/images/logos/animaginary.svg'
 // import logoCosmos from '@/images/logos/cosmos.svg'
 // import logoHelioStream from '@/images/logos/helio-stream.svg'
@@ -59,6 +60,7 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
+  ...standardMetadata,
   title: 'Projects',
   description: 'Things I’ve made trying to put my dent in the universe.',
 }

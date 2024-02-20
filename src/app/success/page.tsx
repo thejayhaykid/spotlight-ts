@@ -1,5 +1,12 @@
 import { Button } from '@/components/Button'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { standardMetadata } from '@/lib/metadata'
+
+export const metadata = {
+  ...standardMetadata,
+  title: 'Success',
+  description: 'Your message has been sent!',
+}
 
 export default function Success() {
   return (

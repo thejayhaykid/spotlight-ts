@@ -1,5 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
+import { standardMetadata } from '@/lib/metadata'
 import before from './paypr-before.jpg'
 import after from './paypr-after.png'
 
@@ -12,6 +13,7 @@ export const article = {
 }
 
 export const metadata = {
+  ...standardMetadata,
   title: article.title,
   description: article.description,
 }

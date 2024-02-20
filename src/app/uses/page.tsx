@@ -1,6 +1,7 @@
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { standardMetadata } from '@/lib/metadata'
 
 function ToolsSection({
   children,
@@ -35,6 +36,7 @@ function Tool({
 }
 
 export const metadata = {
+  ...standardMetadata,
   title: 'Uses',
   description: 'Software I use, gadgets I love, and other things I recommend.',
 }

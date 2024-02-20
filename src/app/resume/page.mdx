@@ -9,6 +9,7 @@ import logoHMB from '@/images/logos/HMB.png'
 import logoSingleSpa from '@/images/logos/single-spa.svg'
 import logoApple from '@/images/logos/Apple.png'
 import logoStashtag from '@/images/logos/stashtag.app.png'
+import { standardMetadata } from '@/lib/metadata'
 
 export const article = {
   author: 'Jake Hayes',
@@ -18,6 +19,7 @@ export const article = {
 }
 
 export const metadata = {
+  ...standardMetadata,
   title: article.title,
   description: article.description,
 }
