@@ -5,13 +5,6 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { encode } from '@/lib/urlHelper'
 import { standardMetadata } from '@/lib/metadata'
 
-export const metadata = {
-  ...standardMetadata,
-  title: 'Contact',
-  description:
-    'I’m thrilled to receive your message! Whether you have a question, suggestion, or just want to say hello, I’m here to help.',
-}
-
 export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
