@@ -1,5 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
+import { standardMetadata } from '@/lib/metadata'
 import before from './paypr-before.jpg'
 import after from './paypr-after.png'
 
@@ -8,10 +9,11 @@ export const article = {
   date: '2021-03-23',
   title: 'Introducing Paypr',
   description: 'A script to make a perfectly sized wallpaper from any image.',
-  slug: 'paypr',
+  slug: '2021/paypr',
 }
 
 export const metadata = {
+  ...standardMetadata,
   title: article.title,
   description: article.description,
 }

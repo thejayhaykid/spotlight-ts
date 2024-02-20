@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { encode } from '@/lib/urlHelper'
+import { standardMetadata } from '@/lib/metadata'
 
 export default function Contact() {
   const [name, setName] = useState('')

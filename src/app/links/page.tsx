@@ -9,6 +9,7 @@ import redbubble from '@/images/logos/redbubble.png'
 import stashtag from '@/images/logos/stashtag.app.png'
 import gumroad from '@/images/logos/gumroad.png'
 import buymeacoffee from '@/images/logos/buy-me-a-coffee.png'
+import { standardMetadata } from '@/lib/metadata'
 
 interface Link {
   primaryHeader: string
@@ -147,6 +148,7 @@ function LinkGroup({ links }: Readonly<LinkGroupProps>) {
   )
 }
 export const metadata = {
+  ...standardMetadata,
   title: 'Links',
   description: 'Various Links to my social media and other things',
 }

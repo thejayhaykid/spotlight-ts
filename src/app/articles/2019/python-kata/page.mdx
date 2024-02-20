@@ -1,4 +1,5 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import { standardMetadata } from '@/lib/metadata'
 import Image from 'next/image'
 import lights from './red-green.jpg'
 
@@ -7,10 +8,11 @@ export const article = {
   date: '2019-11-26',
   title: 'My Process on a Coding Challenge',
   description: 'Using test driven development to solve a problem.',
-  slug: 'python-kata',
+  slug: '2019/python-kata',
 }
 
 export const metadata = {
+  ...standardMetadata,
   title: article.title,
   description: article.description,
 }
